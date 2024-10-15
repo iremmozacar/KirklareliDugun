@@ -5,12 +5,6 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "[!r]*/**": true,
-        "r[!a]*/**": true,
-        "ra[!v]*/**": true,
-        "rav[!e]*/**": true,
-        "rave[!n]*/**": true,
-        "raven[!1]*/**": true
+        "**/Thumbs.db": true
     }
 }
