@@ -3738,7 +3738,7 @@ html {
 }
 
 .background {
-    background-image: url('images/header-backgroundşş.jpg');
+    background-image: url('images/header-background.jpg');
     /* Arka plan fotoğrafı buraya eklenir */
     background-size: cover;
     background-position: center;
