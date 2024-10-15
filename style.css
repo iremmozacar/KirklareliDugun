@@ -3719,71 +3719,109 @@ blockquote {
     -webkit-transition: all .3s ease;
 }
 
-/* Yuvarlak buton için stil */
-.circle-button {
+.circle-button-wrapper {
     display: flex;
-    top: 150%;
-    /* Butonu yukarı/aşağı kaydırmak için bu değeri değiştir */
-    left: 150%;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    /* Yuvarlağın boyutu */
-    height: 200px;
-    background-color: none;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 50%;
-    /* Yuvarlak yapmak için */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
+    height: 100%;
+    /* Yüksekliği tam kapsar */
 }
 
-.circle-button:hover {
-    background-color: #e9d6d6;
+.circle-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    /* Ekran genişliğine göre boyut */
+    height: 25vw;
+    /* Ekran genişliğine göre boyut */
+    max-width: 250px;
+    /* Maksimum genişlik */
+    max-height: 250px;
+    /* Maksimum yükseklik */
+    border-radius: 50%;
+    /* Yuvarlak görünüm */
+    overflow: hidden;
+    /* Yuvarlak alanda içerik taşmasını önler */
+    text-decoration: none;
+    /* Altı çizgi yok */
+    color: white;
+    /* Yazı rengi */
+    font-size: 24px;
+    /* Yazı boyutu */
+    font-weight: bold;
+    /* Kalın yazı */
+    transition: transform 0.3s ease;
+    /* Hover geçişi */
+}
 
-    /* Üzerine gelindiğinde renk değişimi */
+/* Arka plan resimleri */
+.raven-button {
+    background-image: url('images/sidelya10.png');
+    /* Raven fotoğrafı */
+    background-size: cover;
+    /* Arka planı kapsar */
+    background-position: center;
+    /* Merkezden görüntüler */
+}
+
+.sidelya-button {
+    background-image: url('images/sidelya4.jpg');
+    /* Sidelya fotoğrafı */
+    background-size: cover;
+    /* Arka planı kapsar */
+    background-position: center;
+    /* Merkezden görüntüler */
+}
+
+/* Yuvarlak buton üzerine gelindiğinde */
+.circle-button:hover {
     transform: scale(1.1);
     /* Hover ile büyütme */
 }
 
-/* Büyük ekranlar için varsayılan ayarlar */
-@media (min-width: 1024px) {
+/* Buton altındaki yazı */
+.circle-image {
+    width: 100%;
+    /* Resim tam butonu kapsar */
+    height: 100%;
+    /* Resim tam butonu kapsar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Resmi arka plana alır */
+}
+
+.circle-button span {
+    position: relative;
+    /* Yazıyı konumlandır */
+    z-index: 1;
+    /* Yazıyı ön planda tutar */
+    text-align: center;
+    /* Yazıyı ortala */
+}
+
+/* Responsive ayarlar */
+@media (max-width: 1200px) {
     .circle-button {
-        width: 200px;
-        height: 200px;
-        top: 45%;
-        /* Dikey ayar */
-        left: 70%;
-        /* Yatay ayar */
+        width: 20vw;
+        /* Daha küçük ekranlar için boyut */
+        height: 20vw;
+        /* Daha küçük ekranlar için boyut */
     }
 }
 
-/* Tablet boyutları için (768px - 1023px) */
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 768px) {
     .circle-button {
-        width: 150px;
-        height: 150px;
-        top: 50%;
-        /* Dikey ayar */
-        left: 50%;
-        /* Yatay ayar */
+        width: 30vw;
+        /* Tablet boyutları için boyut */
+        height: 30vw;
+        /* Tablet boyutları için boyut */
     }
 }
 
-/* Mobil cihazlar için (767px ve altı) */
-@media (max-width: 767px) {
-    .circle-button {
-        width: 120px;
-        height: 120px;
-        top: 55%;
-        /* Dikey ayar */
-        left: 50%;
-        /* Yatay ayar */
-        font-size: 16px;
-    }
 
     .slider-desc {
         position: absolute;
@@ -5380,4 +5418,3 @@ blockquote {
     .cent {
         text-align: center;
     }
-}
