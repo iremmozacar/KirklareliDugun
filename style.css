@@ -127,13 +127,13 @@ h3 {
 .section-tittle h2 {
     font-size: 36px;
     font-weight: 700;
-    color: #5d5d5d;
+    color: #948e8e;
     /* White title */
 }
 
 .section-tittle p {
     font-size: 18px;
-    color: #141313;
+    color: #575857;
     /* Lighter text for paragraph */
     max-width: 700px;
     margin: 0 auto;
@@ -180,7 +180,7 @@ h3 {
 
 .single-question p {
     font-size: 16px;
-    color: #000000;
+    color: #616060;
     /* Slightly lighter text for answers */
 }
 
@@ -201,7 +201,7 @@ h3 {
 }
 
 .more-btn .btn:hover {
-    background-color: #0056b3;
+    background-color: #8e8f93;
 }
 
 /* Mobile responsive for stacking */
@@ -3698,11 +3698,11 @@ blockquote {
 }
 
 .btn-blue {
-    background: none;
-    border: #EDDFE0;
+    background: #cac8c8;
+  
     color: #fff;
     font-weight: 700;
-    border: 2px solid #c4c1c2;
+    
     border-radius: 3px;
     transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -3711,15 +3711,123 @@ blockquote {
 
 .btn-blue:hover,
 .btn-blue:focus {
-    color: #ffd8e6;
+    color: #ffffff;
     text-decoration: none;
-    background: none;
+    background: #e6e6e6;
     transition: all .3s ease;
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
 }
+.content-offers {
+    margin-bottom: 2px; /* İlk iki element arasındaki boşluk */
+}
 
+#main-slider {
+    margin-top: 30px; /* Slider ve footer arasındaki boşluk */
+}
 
+#footer {
+    margin-top: 30px; /* Footer ile slider arasında boşluk olmasını istemiyorsanız bu değeri sıfırlayabilirsiniz */
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-image: url('images/header-backgroundşş.jpg');
+    /* Arka plan fotoğrafı buraya eklenir */
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 4cm);
+    /* Üst ve alt boşluk için toplam 6 cm çıkar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: rgb(193, 191, 191);
+}
+
+.circles-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /* Dairelerin toplam genişliği */
+    max-width: 800px;
+    /* Maksimum genişlik */
+}
+
+.circle {
+    width: 45%;
+    /* Dairelerin genişliği %45 olarak ayarlandı */
+    padding-bottom: 45%;
+    /* 1:1 aspect ratio için */
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(149, 149, 149, 0.5);
+    transition: transform 0.3s ease;
+    margin: 0 20px;
+    /* Daireler arasında daha fazla boşluk */
+}
+
+.circle:hover {
+    transform: scale(1.05);
+    
+}
+
+.circle img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+}
+
+.circle a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.circle-text {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(211, 209, 210, 0.6);
+    padding: 25px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #f4eeee;
+    /* Yazı boyutu */
+}
+
+@media (max-width: 768px) {
+    .circles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circle {
+        width: 45%;
+        /* Mobilde daha geniş */
+        margin-bottom: 20px;
+        /* Daireler arasında boşluk */
+    }
+
+    .circle-text {
+        font-size: 1.2rem;
+        color: #fff ;
+        /* Mobilde yazı boyutu */
+    }
+}
 
 
     .slider-desc {

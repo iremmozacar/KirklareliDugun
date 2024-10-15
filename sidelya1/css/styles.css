@@ -92,6 +92,8 @@ h6 {
 	font-family: "Poppins"
 }
 
+
+
 .p-large {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
@@ -170,8 +172,8 @@ a:hover {
 }
 
 .btn-solid-reg:hover {
-	background-color: transparent;
-	color: #ece5e6;
+	background-color: #d5ded8;
+	color: #818a80;
 	/* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
@@ -948,7 +950,7 @@ a:hover {
 /***********************/
 .ex-header {
 	padding-top: 8.5rem;
-	padding-bottom: 4rem;
+	padding-bottom: 0rem;
 	background-color: #B4B4B8;
 }
 
